@@ -1,0 +1,127 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>Master Bedroom</title>
+</head>
+<body link="navy" alink="navy" vlink="navy">
+
+    <header>
+        <h2 class="logo">Luxe Living Spaces</h2>
+        <nav class="navigation">
+            <a href="LIM_ex2.html">Home</a>
+            <a href="page_3.html>" target="_self">
+                <button class="btnLogin-popup">Sign up</button></a>
+        </nav>
+    </header>
+<hr>
+
+    <style>
+        header {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            width: 80%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+        .logo {
+            font-style: italic;
+            font-size: 2em;
+            color: #b59410;
+            user-select: none;
+        }
+        .navigation a{
+            position: relative;
+            font-size: 1em;
+            color: #b59410;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 20px;
+        }
+        .navigation a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3px;
+            background: #b59410;
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+        .navigation a:hover::after{
+            transform-origin: left;
+            transform: scaleX(1);
+    
+        }
+        .navigation .btnLogin-popup {
+            width: 100px;
+            height: 50px;
+            background: transparent;
+            color: #b59410;
+            outline: none;
+            border-color: #b59410;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin: 10px;
+            transition: 0.5s;
+        }
+    
+        .navigation .btnLogin-popup:hover {
+            background: #b59410;
+            color: white ;
+        }
+    
+        body {
+                background-image: url('marble.jpg');
+                background-size: auto; 
+                background-position: fit; 
+                background-repeat: no-repeat; 
+            }           
+    </style>
+
+<table>
+<tr>
+
+<td valign="top">
+<b><font size="+3" face="BAZOOKA" color="navy">Home Tour
+<br />Master Bedroom</font></b>
+<br clear="left" />
+<p>The spacious and comfortable master bedroom is bordered by a large picture 
+window and French doors to the outside patio. The windows provide a lovely view 
+of the backyard hot tub area. A large master bath with a Roman tub, 
+shower, and walk-in closet is attached.</p>
+
+<p>Call us at 1-555-NEW-HOME or e-mail us at <a href="mailto:hometour@isp.com">
+hometour@isp.com</a> for more information or to schedule a showing.</p>
+</td>
+
+<td>
+<img src="master.jpg" hspace="20" border="0" align="right" alt="Master Bedroom" 
+height="360" width="480" />
+</td>
+</tr>
+
+<tr>
+<td><br /></td>
+<td align="center"><a href="hometour.htm">Home</a> | 
+<a href="kitchen.htm">Kitchen</a> | 
+<a href="living.htm">Living</a> |
+<a href="dining.htm">Dining</a> |
+<a href="library.htm">Library</a> |
+<a href="master.htm">Master</a> 
+</td>
+</tr>
+</table>
+<footer>@Striker5772 2023</footer>
+</body>
+</html>

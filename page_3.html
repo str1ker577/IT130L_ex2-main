@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navigation">
+    <!--Logo and NAV bar-->
+    <header>
+        <h2 class="logo">Luxe Living Spaces</h2>
+        <nav class="navigation">
+            <a href="LIM_ex2.html">Home</a>
+            <a href="page_2.html">Floorplans</a>
+        </nav>
+    </header>
+<style>
+    header {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        width: 80%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+    .logo {
+        font-style: italic;
+        font-size: 2em;
+        color: #b59410;
+        user-select: none;
+    }
+    .navigation a{
+        position: relative;
+        font-size: 1em;
+        color: #b59410;
+        text-decoration: none;
+        font-weight: 500;
+        margin: 20px;
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #b59410;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+    .navigation a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+
+    }
+    body {
+            background-image: url('marble.jpg');
+            background-size: auto; 
+            background-position: fit; 
+            background-repeat: no-repeat; 
+        }
+
+</style>
+    </div>
+<center>
+<div class="wrapper">
+    <form action="#">
+        <h2>Register</h2>
+        
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Full Name" required>
+                <i class='bx bxs-user' style='color:#b59410' ></i>
+        </div>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Email" required>
+                <i class='bx bxs-envelope' style='color:#b59410' ></i>
+        </div>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Password" required>
+                <i class='bx bx-key' style='color:#b59410' ></i>
+        </div>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Phone Number" required>
+                <i class='bx bxs-phone' style='color:#b59410' ></i>
+        </div>
+        <label><input type="checkbox">
+                I hereby declare that the above 
+                information provided is true and correct
+        </label>
+    </form>
+</div>
+
+<style>
+    .wrapper {
+        width: 750px;
+        background:transparent;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .wrapper h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        color:#b59410;
+    }
+    .wrapper .input-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: #b59410;
+    }
+    .wrapper .input-field {
+        position: relative;
+        width: 50%;
+        background-color: white;
+        margin: 13px 0;
+    }
+
+</style>
+
+<footer>@Striker5772 2023</footer>
+</body>
+</html>
