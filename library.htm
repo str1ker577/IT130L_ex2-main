@@ -8,40 +8,100 @@
 </head>
 <body link="navy" alink="navy" vlink="navy">
 
-    <body>
-        <style>
-            body {
+    <header>
+        <h2 class="logo">Luxe Living Spaces</h2>
+        <nav class="navigation">
+            <a href="LIM_ex2.html">Home</a>
+            <a href="page_2.html">Floorplans</a>
+            <a href="page_3.html">
+                <button class="btnLogin-popup">Apply</button></a>
+        </nav>
+    </header>
+<hr>
+
+    <style>
+        header {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            width: 80%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+        .logo {
+            font-style: italic;
+            font-size: 2em;
+            color: #b59410;
+            user-select: none;
+        }
+        .navigation a{
+            position: relative;
+            font-size: 1em;
+            color: #b59410;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 20px;
+        }
+        .navigation a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3px;
+            background: #b59410;
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+        .navigation a:hover::after{
+            transform-origin: left;
+            transform: scaleX(1);
+    
+        }
+        .navigation .btnLogin-popup {
+            width: 100px;
+            height: 50px;
+            background: transparent;
+            color: #b59410;
+            outline: none;
+            border-color: #b59410;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin: 10px;
+            transition: 0.5s;
+        }
+    
+        .navigation .btnLogin-popup:hover {
+            background: #b59410;
+            color: white ;
+        }
+    
+        body {
                 background-image: url('marble.jpg');
                 background-size: auto; 
-                background-position: center; 
+                background-position: fit; 
                 background-repeat: no-repeat; 
-            }
-    
-            
-            h1 {
-                color: black;
-            }
-            p {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 15px;
-            text-align: justify;
-            text-justify: inter-word;
-            width: 800px;
-    }           
-    </style>
-  
-  
-  <center>
-      <h1>Luxe Living Spaces</h1>
-  <hr style="color: gold;">
+            }   
+        hr {
+        height: 2px;
+        background-color: #b59410;
+        }        
+    </style>     
+<center>
 
 <table>
 <tr>
 <td valign="top">
-<b><font size="+3" face="BAZOOKA" color="navy">Home Tour
+<b><font size="+3" face="BAZOOKA" color="#b59410">Home Tour
 <br />Library</font></b>
 <br clear="left" />
-<p>Practicality is the key word for the library, which provides is enough room to 
+<p style="font-size: 1.6em;">Practicality is the key word for the library, which provides is enough room to 
 accommodate a wall full of bookshelves together with a full-size sofa. The library 
 provides a quiet place to read with plenty of natural light provided by a large 
 picture window.</p>
@@ -68,6 +128,28 @@ width="480" />
 </tr>
 </table>
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>@Striker5772 2023</footer>
 </body>
 </html>
