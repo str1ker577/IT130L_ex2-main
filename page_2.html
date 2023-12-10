@@ -16,10 +16,13 @@
     </header>
 <style>
     header {
-        position: relative;
+        position: sticky;
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid #b59410;
+        padding: 100px 300px;
         top: 0;
         bottom: 0;
-        width: 80%;
+        width: 90%;
         padding: 20px 100px;
         display: flex;
         justify-content: space-between;
@@ -107,11 +110,16 @@
         font-size: 1.5em;
         font-family: 'Times New Roman', Times, serif;
     }
+    img {
+        border: 2.5px solid #b59410;
+        border-radius: 25px ;
+        box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 10);
+    }
 </style>
 <center>
 <br>
-<hr>
-<br>
+
+
     <h2>Click on the Room the you wish to view:</h2>
     <img src="floorplan.gif" width="500" height="500" alt="Floorplan" usemap="#Floorplan">
 <br>
@@ -122,7 +130,8 @@
     <area shape="rect" coords="135,56,200,105" alt="Living room" href="living.htm">
   </map>
 <br>
-  <hr>
+<br>
+<hr>
 
     
   <h2 style="font-size: 1.5em; color: #b59410;">

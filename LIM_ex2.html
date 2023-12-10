@@ -20,11 +20,13 @@
     </header>
 <style>
     header {
-        position: relative;
+        position: sticky;
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid #b59410;
+        padding: 20px 100px;
         top: 0;
         bottom: 0;
-        width: 80%;
-        padding: 20px 100px;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,7 +39,7 @@
         user-select: none;
     }
     .navigation a{
-        position: relative;
+        position: sticky;
         font-size: 1em;
         color: #b59410;
         text-decoration: none;
@@ -80,11 +82,17 @@
         background: #b59410;
         color: white ;
     }
+
+    /* Body Content*/
     body {
             background-image: url('marble.jpg');
             background-size: auto; 
             background-position: fit; 
             background-repeat: no-repeat; 
+    }
+    img {
+        border-radius: 50px;
+        box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 10);
     }
     hr {
         height: 2px;
@@ -104,7 +112,12 @@
     text-align: justify;
     text-justify: inter-word;
     width: 800px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #b59410;
+    border-radius: 50px;
+    padding: 20px 100px;
     }
+    /* Slide Show*/
     .slider-wrapper{
         position: relative;
         max-width: 48rem;
@@ -150,8 +163,14 @@
 
 <center>
 <br>
-    <img src="condo.jpg" width="800" height="500" alt="condo" ">
+<div class="img">
+    <img src="condo.jpg" width="800" height="500" alt="condo">
+</div>
+
+<br>
+<br>
 <hr>
+
 
     <h2>About us:</h2>    
 <p>

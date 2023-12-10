@@ -17,12 +17,17 @@
             <a href="page_2.html" style="font-size: larger; font-style: italic; font-weight: 1000;">Floorplans</a>
         </nav>
     </header>
+<br>
 <style>
+    /*Header and Nav bar*/
     header {
-        position: relative;
+        position: sticky;
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid #b59410;
+        padding: 100px 300px;
         top: 0;
         bottom: 0;
-        width: 80%;
+        width: 90%;
         padding: 20px 100px;
         display: flex;
         justify-content: space-between;
@@ -59,8 +64,8 @@
     .navigation a:hover::after{
         transform-origin: left;
         transform: scaleX(1);
-
     }
+    /* Body */
     body {
             background-image: url('marble.jpg');
             background-size: auto; 
@@ -71,71 +76,337 @@
         height: 2px;
         background-color: #b59410;
     }
-</style>
-    </div>
-<center>
-<div class="wrapper">
-    <form action="#">
-        <h2>Register</h2>
-        
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Full Name" required>
-                <i class='bx bxs-user' style='color:#b59410' ></i>
-        </div>
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Email" required>
-                <i class='bx bxs-envelope' style='color:#b59410' ></i>
-        </div>
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Password" required>
-                <i class='bx bx-key' style='color:#b59410' ></i>
-        </div>
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Phone Number" required>
-                <i class='bx bxs-phone' style='color:#b59410' ></i>
-        </div>
-        <label><input type="checkbox">
-                I hereby declare that the above 
-                information provided is true and correct
-        </label>
-    </form>
-</div>
-
-<style>
+    /* Application Form */
     .wrapper {
-        width: 750px;
-        background:transparent;
-        border-radius: 10px;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
+        margin: auto;
+        position: relative;
+        width: 450px;
+        height: 1250px;
+        background: transparent;
+        border: 2px solid #b59410;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .wrapper h2 {
-        font-size: 36px;
+    .wrapper .form-box {
+        width: 100%;
+        padding: 40px;
+    }
+    .form-box h2{
+        font-size: 2em;
+        color: #b59410;
         text-align: center;
-        margin-bottom: 20px;
-        color:#b59410;
     }
-    .wrapper .input-box {
+    .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #b59410;
+        margin: 30px 0;
+    }
+    .input-box label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-5%);
+        color: #b59410;
+        font-size: 1em;
+        font-weight: 700;
+        pointer-events: none;
+        transition: .5s;
+    }
+        .input-box input:focus~label,
+        .input-box input:valid~label{
+        top: -6px;
+    }
+
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #b59410;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        padding: 0 25px 0 5px;
+    }
+    .input-box i {
+        position: relative;
+        left: 350px;
+        bottom: 50px;
+        font-size: 1.2em;
+        color: #b59410;
+        line-height: 57px;
+    }
+    .remember-forget {
+        font-size: 0.9em;
+        color: #b59410;
+        font-weight: 500;
+        margin: -15px 0 -15px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        background: #b59410;
     }
-    .wrapper .input-field {
+    /*Registration Form*/
+    .wrapper-2 {
+        margin: auto;
         position: relative;
-        width: 50%;
-        background-color: white;
-        margin: 13px 0;
+        width: 450px;
+        height: 650px;
+        background: transparent;
+        border: 2px solid #b59410;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+        height: 45px;
+        background: #b59410;
+        border: none;
+        outline: ;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight:600;
+        color: white;
+        box-shadow: 0 1.5rem rem -0.75rem rgba(0, 0, 0, 10);
     }
 
+    .wrapper-container {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 80%;
+        left: -30%;
+    }
+    .radio{
+        font-size: large;
+    }
+    label {
+        position: relative;
+        color: #b59410;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 5px;
+        display: flex;
+        align-items: normal;
+    }   
+    /*Date box*/
+    input[type="date"]{
+        position: relative;
+        background: #b59410;
+        border: none;
+        outline: none;
+        margin: auto;
+        padding: 15px;
+        width: 60%;
+        height: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 1.5em;
+        font-family: monospace;
+        font-weight:600;
+        color: white;
+        top: 80%;
+        left: auto;
+    }
+    /*Check boxes*/
+    .checkbox{
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #b59410;
+    box-shadow: 1px 1px 1px #999;
+    } 
+    .radio{
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    margin-top: 12px;
+    }
 </style>
+    </div>
 
+<!--Application Form-->
+<div class="wrapper">
+    <div class="form-box login">
+        <h2>Registration</h2>
+        <!-- Email, Password, Names...-->
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="First Name" minlength="4" maxlength="30" required>
+                <i class='bx bxs-user' style='color:#b59410'></i>
+                <label>First Name</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Last Name" minlength="2" maxlength="30"  required>
+                <i class='bx bxs-user' style='color:#b59410'></i>
+                <label>Last Name</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Email" minlength="4" maxlength="30"  required>
+                <i class='bx bxs-envelope' style='color:#b59410'></i>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Password" minlength="4" maxlength="30"  required>
+                <i class='bx bxs-lock-alt' style='color:#b59410'></i>
+                <label>Password</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Confirm Password"  minlength="4" maxlength="30"  required>
+                <i class='bx bxs-lock-alt' style='color:#b59410'></i>
+                <label>Confirm Password</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Phone Number" minlength="4" maxlength="30" required>
+                <i class='bx bxs-phone' style='color:#b59410'></i>
+                <label>Phone Number</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Recovery Email Address" minlength="4" maxlength="30" required>
+                <i class='bx bx-envelope' style='color:#b59410'></i>
+                <label>Recovery Email Address</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Landline" minlength="4" maxlength="30" required>
+                <i class='bx bxs-phone' style='color:#b59410'></i>
+                <label>Landline</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Emergency Contact" minlength="4" maxlength="30" required>
+                <i class='bx bxs-phone' style='color:#b59410'></i>
+                <label>Emergency Contact</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="Legal Address" minlength="4" maxlength="10000" required>
+                <i class='bx bxs-home' style='color:#b59410' ></i>
+                <label>Legal Address</label>
+            </div>
+
+            <!--Date-->
+            <label for="bday" style="font-weight: 600;">Birthdate:</label>
+            <br>
+            <input type="date" id="bday">
+            <br>
+            <br>
+
+            <!--Check boxes-->
+            <div class="checkbox">
+                <label><input type="checkbox">Remember me</label>
+                <br>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">I have read the Terms & Services</label>
+                <br>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">I accept to the Terms & Services</label>
+                <br>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Allow us to send updates through text</label>
+                <br>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Allow us to send updates through Email</label>
+                <br>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+            
+    <div class="wrapper-2">
+        <div class="form-box login-2">
+            <h2>Application</h2>            
+
+            <!--Text Area-->
+            <label for="story" style="font-size: 1.2em; font-weight: 550;">Tell us why you're applying:</label>
+            <textarea id="story" name="story" rows="5" cols="33"></textarea>
+            <br>
+            <br>
+            
+            
+            <!--Selection Boxes-->
+            <label for="selection-box" style="font-size: 1.2em; font-weight: 550;">Choose your price range:</label>
+
+            <select name="selection-box" id="Amount" style="color: #b59410;">
+            <option value="cash">$75,000-$100,000</option>
+            <option value="cash">$125,000-$150,000</option>
+            <option value="cash">$175,000-$200,000</option>
+            <option value="cash">$225,000-$250,000</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="selection-box" style="font-size: 1.2em; font-weight: 550;">Choose the desired setup: </label>
+
+            <select name="selection-box" id="Rooms" style="color: #b59410;">
+            <option value="setup">1 Bedroom - 1 Bathroom</option>
+            <option value="setup">2 Bedroom - 1 Bathroom</option>
+            <option value="setup">2 Bedroom - 2 Bathroom</option>
+            <option value="setup">3 Bedroom - 2 Bathroom</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="selection-box" style="font-size: 1.2em; font-weight: 550;">Choose storage option:</label>
+
+            <select name="selection-box" id="garage" style="color: #b59410;">
+            <option value="garage">No Garage</option>
+            <option value="storage-room">Storage Room</option>
+            <option value="car-garage">1 Car Garage</option>
+            <option value="car-garages">2 Car Garage</option>
+            </select>
+            <br>
+            <br>
+
+            <label class="radio" style="font-size: 1.2em; font-weight: 550;">How did you find us?</label>
+            <label><input type="radio" id="opt1" >Online advertisements</label>
+            <label><input type="radio" id="opt1" >Instagram or Facebook</label>
+            <label><input type="radio" id="opt1" >YouTube</label>
+            <label><input type="radio" id="opt1" >Through a friend's reccomendations</label>
+            <label><input type="radio" id="opt1" >Prefer not to say</label>
+            <br>
+
+            <!--Submit Button-->
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>@Striker5772 2023</footer>
 </body>
 </html>
