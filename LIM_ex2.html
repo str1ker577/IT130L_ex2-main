@@ -10,11 +10,11 @@
 
 <!--Logo and NAV bar-->
     <header>
-        <h2 class="logo">Luxe Living Spaces</h2>
+        <h1 class="logo">Luxe Living Spaces</h1>
         <nav class="navigation">
-            <a href="page_2.html">Floorplans</a>
+            <a href="page_2.html" style="font-size: larger; font-style: italic; font-weight: 1000;">Floorplans</a>
             <a href="page_3.html">
-                <button class="btnLogin-popup">Apply</button>
+                <button class="btnLogin-popup" style="font-size: larger; font-style: italic; font-weight: 500;">Apply</button>
             </a>
         </nav>
     </header>
@@ -80,7 +80,6 @@
         background: #b59410;
         color: white ;
     }
-
     body {
             background-image: url('marble.jpg');
             background-size: auto; 
@@ -92,16 +91,60 @@
         background-color: #b59410;
     }
         
-    h1 {
+    h2 {
         color: #b59410;
+        font-style: italic;
+        font-size: 2em;
     }
     p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-indent: 50px;
     text-align: justify;
     text-justify: inter-word;
     width: 800px;
     }
+    .slider-wrapper{
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+    .slider {
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 10);
+        border-radius: 0.5rem;
+    }
+    .slider img{
+        flex: 1 0 100%;
+        scroll-snap-type: start;
+        object-fit: fill;
+    }
+    .slider-nav {
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .slider-nav a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+    .slider-nav a:hover {
+        opacity: 1;  
+    }
+
 </style>
 
 
@@ -110,18 +153,18 @@
     <img src="condo.jpg" width="800" height="500" alt="condo" ">
 <hr>
 
-    <h2 style="color: #b59410;">About us:</h2>    
-<p style="text-indent: 30px; font-family: 'Times New Roman', Times, serif; font-size: large;">
+    <h2>About us:</h2>    
+<p>
         Real Living Real Estate is a full-service real estate brokerage franchise company with a comprehensive and integrated suite of resources for franchisees and their sales professionals, as well as for consumers who work with them. In 2016 and 2017, Real Living Real Estate was named "Real Estate Agency Brand of the Year" in the ongoing Harris Poll EquiTrend® study; and was named "Most Loved" and "Most Trusted" real estate brand in the study in consecutive years. Additionally, the Real Living Brand and its innovative concepts were recognized by Entrepreneur magazine as well as Inman News, receiving several Inman Innovator Awards. Real Living was also named "the Most Promising New National Brand" by the Swanepoel TRENDS Report. Real Living Real Estate is a network brand of HSF Affiliates LLC, which is owned by HomeServices of America, Inc., a Berkshire Hathaway affiliate.
         Real Living leads the real estate industry with a customer satisfaction rating of 98 percent, based upon research conducted by a third party, independent research firm*.
         Based in Minneapolis, Minn., HomeServices of America, Inc. is the second-largest, full-service residential real estate brokerage firm and the largest brokerage-owned settlement services provider in the U.S. and is the majority owner in the Prudential Real Estate and Real Living Real Estate franchise networks. Owned by MidAmerican Energy Holdings Company, a consolidated subsidiary of Berkshire Hathaway Inc., HomeServices' operating companies offer integrated real estate services, including brokerage services, mortgage originations, title and closing services, property and casualty insurance, home warranties and other homeownership services.
     </p>
-<p style="text-indent: 30px; font-family: 'Times New Roman', Times, serif; font-size: large;">
+<p>
     Real Living leads the real estate industry with a customer satisfaction rating of 98 percent,
     based upon research conducted by a third party, independent research firm*
     </p>
 
-<p style="text-indent: 30px; font-family: 'Times New Roman', Times, serif; font-size: large; font-size: large;">
+<p>
         Based in Minneapolis, Minn., HomeServices of America, Inc. is the second-largest, full-service residential
         real estate brokerage firm and the largest brokerage-owned settlement services provider in the U.S. and is the majority owner in the
         Prudential Real Estate and Real Living Real Estate franchise networks. Owned by MidAmerican Energy Holdings Company, a consolidated
@@ -132,8 +175,38 @@
 
 <hr>
 
+    <h2>Gallery</h2>
+<section class="container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="slide-1" src="condo1.jpg"/>
+            <img id="slide-2" src="condo2.jpg"/>
+            <img id="slide-3" src="condo3.jpg"/>
+            <img id="slide-4" src="condo4.jpg"/>
+            <img id="slide-5" src="condo5.jpg"/>
+    
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+        </div>
+    </div>
+</section>
 
-</center>  
+
+</center> 
+<br> 
+<br> 
+<br> 
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>@Striker5772 2023</footer>
 </body>
 </html>
